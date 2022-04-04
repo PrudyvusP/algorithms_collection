@@ -1,4 +1,4 @@
-# ID 66730909
+# ID 66765450
 from operator import add, sub, mul, floordiv
 
 operators = {
@@ -8,29 +8,40 @@ operators = {
     "/": floordiv
 }
 
-SINGLE_GUY_CONST = 2
+SINGLE_NUM_CONST = 2
+
+
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def push(self, item):
+        self.items.append(item)
+
+    def pop(self):
+        return self.items.pop()
+
+    def peek(self):
+        return self.items[-1]
 
 
 def solution(strq: str) -> int:
-    stack = []
+    stack = Stack()
     items = strq.split()
 
-    if len(items) < SINGLE_GUY_CONST:
+    if len(items) < SINGLE_NUM_CONST:
         return int(items[0])
 
     for symb in items:
         if symb not in operators:
-            stack.append(int(symb))
+            stack.push(int(symb))
         else:
             digit2, digit1 = int(stack.pop()), int(stack.pop())
-            stack.append(operators[symb](digit1, digit2))
-    return stack[-1]
+            stack.push(operators[symb](digit1, digit2))
+    return stack.peek()
 
 
-if __name__ == '__main__':
-    print(solution(input()))
-
-    """
+def test():
     assert solution('-123') == -123
     assert solution('-4 4 +') == 0
     assert solution('4 2 * 4 / 25 * 2 - 12 / 500 2 * + 2 / -999 + 71 + -1 *') == 426
@@ -40,4 +51,7 @@ if __name__ == '__main__':
     assert solution('10 2 4 * -')
     assert solution('12 5 /') == 2
     assert solution('3 4 +') == 7
-    """
+
+
+if __name__ == '__main__':
+    print(solution(input()))
