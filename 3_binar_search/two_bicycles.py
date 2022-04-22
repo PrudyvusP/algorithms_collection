@@ -20,7 +20,6 @@ def findfirstge(seq, x):
     return ans + 1
 
 
-# lbinsearch(0, )
 if __name__ == '__main__':
     _ = input()
     seq = list(map(int, input().split()))
@@ -32,13 +31,6 @@ if __name__ == '__main__':
         if second == -1:
             print(first, -1)
         else:
-            print(first, first+second)
+            print(first, first + second)
     else:
         print('-1 -1')
-
-
-#print(findfirstge([1, 2, 4, 4, 4, 4], 4))
-
-#print(findfirstge([1, 4, 18, 29, 36, 47, 53], 9))
-
-#print(findfirstge([1, 4, 18, 29, 36, 47, 53], 52))
