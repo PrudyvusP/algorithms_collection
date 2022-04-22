@@ -1,7 +1,7 @@
 # Бинарный поиск
 
 ---
-[Я.Контест](https://contest.yandex.ru/contest/24735/problems/)
+[Я.Контест](https://contest.yandex.ru/contest/24735/problems/A/)
 
 <details>
 <summary>

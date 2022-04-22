@@ -1,4 +1,3 @@
-# ID 67615181
 from collections import namedtuple
 
 
