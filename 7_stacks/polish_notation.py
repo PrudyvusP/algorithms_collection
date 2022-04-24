@@ -1,4 +1,3 @@
-# ID 66765450
 from operator import add, sub, mul, floordiv
 
 operators = {

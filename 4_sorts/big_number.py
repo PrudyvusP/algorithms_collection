@@ -32,20 +32,6 @@ def insertion_sort_by_comparator(array, key_func):
         array[j] = item_to_insert
 
 
-"""
-    private int compare(String a, String b) {
-        int a_len = a.length();
-        int b_len = b.length();
-        int len = a_len == b_len ? a_len : a_len + b_len;
-        for (int i=0; i < len; i++) {
-            char ac = i < a_len ? a.charAt(i) : b.charAt(i-a_len);
-            char bc = i < b_len ? b.charAt(i) : a.charAt(i-b_len);
-            if (ac == bc) continue;
-            return ac < bc ? -1 : 1;
-        }
-        return 0;
-"""
-
 if __name__ == '__main__':
     _ = input()
     rofel = input().split()

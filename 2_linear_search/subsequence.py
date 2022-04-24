@@ -1,4 +1,4 @@
-def isSubsequence(s, t):
+def is_subsequence(s, t):
     start = -1
     for i in s:
         start = t.find(i, start + 1)
@@ -6,5 +6,6 @@ def isSubsequence(s, t):
             return False
     return True
 
+
 a, b = input(), input()
-print(isSubsequence(a, b))
+print(is_subsequence(a, b))

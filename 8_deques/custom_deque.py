@@ -1,5 +1,3 @@
-# ID 66766518
-
 ERROR_TEXT = "error"
 
 
