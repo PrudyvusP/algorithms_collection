@@ -9,10 +9,31 @@ def solution(strq: str) -> bool:
     return False
 
 
+strq = ''.join([x for x in input() if x.isalpha()])
+while strq != '':
+    #print(s)
+    if strq[0] == strq[-1]:
+        strq = strq[1:-1]
+    else:
+        print(strq)
+        print('here')
+        a = strq[:-1]
+        print(a)
+        b = strq[1:]
+        print(b)
+        if a == a[::-1] or b == b[::-1]:
+            print(True)
+        else:
+            print(False)
+        break
+else:
+    print(True)
+
+"""    
 if __name__ == '__main__':
     print(solution(input()))
-    #print(solution('#14&*@(a)!(@14112)!@$)!@*$!*a)$*099'))
     assert solution('1kilg%rli8k') is True
     assert solution('kkkkkkkkkee') is False
     assert solution('#14&*@(a)!(@14112)!@$)!@*$!*a)$*099')
-    assert solution('ekkkkkkkkkkkkkkkkkkkkkk')  == True
+    assert solution('ekkkkkkkkkkkkkkkkkkkkkk') is True
+"""
