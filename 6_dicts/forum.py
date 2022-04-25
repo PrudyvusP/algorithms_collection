@@ -6,7 +6,6 @@ if __name__ == '__main__':
     n = int(input())
     main_counter = 1
     topics = defaultdict(list)
-    topics_new = dict()
     while main_counter <= n:
         row = sys.stdin.readline().rstrip()
         if row == '0':

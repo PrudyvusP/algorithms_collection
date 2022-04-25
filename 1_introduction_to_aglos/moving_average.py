@@ -22,6 +22,14 @@ def moving_average(seq: list, k: int) -> list:
     return result
 
 
-assert moving_average([1, 2, 3, 4, 5, 6, 7], 4) == [2.5, 3.5, 4.5, 5.5]
-#assert moving_average([9, 3, 2, 0, 1, 5, 1, 0, 0], 3) == [4.6666666667, 1.666666667, 1, 2, 2.333333335, 2, 0.3333333]
-assert moving_average([1, 2, 3, 4, 5], 5) == [3, ]
+def test():
+    assert moving_average([1, 2, 3, 4, 5, 6, 7], 4) == [2.5, 3.5, 4.5, 5.5]
+    assert moving_average([9, 3, 2, 0, 1, 5, 1, 0, 0], 3) == [4.6666666667, 1.666666667, 1, 2, 2.333333335, 2,
+                                                              0.3333333]
+    assert moving_average([1, 2, 3, 4, 5], 5) == [3, ]
+
+
+if __name__ == '__main__':
+    _ = input()
+    measurements, k = [int(i) for i in input().split()], int(input())
+    print(*moving_average(measurements, k))
