@@ -43,32 +43,3 @@ if __name__ == '__main__':
             print(queue.size)
         else:
             print(queue.pop())
-
-"""
-q = Queue(8)
-q.push(1)
-print(q.queue)  # [1, None, None, None, None, None, None, None]
-print(q.size)   # 1
-q.push(-1)
-q.push(0)
-q.push(11)
-print(q.queue)  # [1, -1, 0, 11, None, None, None, None]
-print(q.size)   # 4
-
-q.pop()
-print(q.queue)  # [None, -1, 0, 11, None, None, None, None]
-print(q.size)   # 3
-
-
-q.pop()
-q.pop()
-q.push(-8)
-q.push(7)
-q.push(3)
-q.push(16)
-print(q.queue) # [None, None, None, 11, -8, 7, 3, 16]
-print(q.size) # 5
-q.push(12)
-print(q.queue) # [12, None, None, 11, -8, 7, 3, 16]
-print(q.size) # 6
-"""

@@ -1,11 +1,3 @@
-"""
-class Node:
-    def __init__(self, value=None, next_item=None):
-        self.value = value
-        self.next_item = next_item
-"""
-
-
 def print_linked_list(vertex):
     while vertex:
         print(vertex.value, end=" -> ")
