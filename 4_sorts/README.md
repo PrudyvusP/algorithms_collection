@@ -357,10 +357,6 @@ start end, где start —– координата начала, end —– к�
 
 ---
 
-
-
----
-
 [Stepik](https://stepik.org/lesson/13248/step/5)
 
 <details>
